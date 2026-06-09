@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=" UTF-8"/>
+    <meta name="viewport" content=""width=device-width, initial-scale="1.0" />
+    <title>Mathew Ayala's Guide To Git</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+    <body>
+        <h2>Git vs Github</h2>
+        <h3>Git</h3>
+        <p>Git is a specialized computer program that acts like a highly advanced, collaborative time machine for files. It automatically records the history of changes made to a project, allowing creators to save different versions of their work, safely experiment with new ideas on the side, and roll back to any exact moment in the past if something goes wrong.</p>
+        <h3>Github</h3>
+        <p>GitHub is an online, cloud-based platform that hosts Git projects. While Git is a tool you run locally on your own computer, GitHub is the website where you upload those project histories so other people can see them, download them, and contribute to them.</p>
+<!-----------------Section 2--------------------->
+        <h2>The Daily Loop</h2>
+        <ol>
+            <li>Edit (Working Directory): You modify, create, or delete files in your project. At this point, the changes only exist as live, un-saved edits on your local machine.</li>
+            <li>Stage (Staging Area): run git add <filename> to move your edited files into the staging area. You choose what you want to keep in your next save point.</filename></li>
+            <li>Commit (Local Repository): git commit -m "your message". This takes a permanent snapshot of your project's history on your computer.  </li>
+            <li>Push (Remote Repository): Uploads your commits over the internet to a remote server like github.</li>
+        </ol>
+<!-----------------Section 3--------------------->
+
+        <h2>Git Commands</h2>
+            <ul>
+                <li>git init : Creates a brand new, empty local Git repository.</li>
+                <li>git clone : Copies an existing repository onto your local machine.</li>
+                <li>git status : Shows the current state of your working directory and staging area.</li>
+                <li>git add : Stages your file changes, preparing them to be saved. </li>
+                <li>git commit : command saves a permanent snapshot of your staged changes into your local Git repository's history.</li>
+                <li>git branch :  Lists, creates, or deletes safe isolated environments for developing features.</li>
+                <li>git pull : Fetches and merges updates from the remote server into your local workspace.</li>
+                <li>git push : uploads your local repository commits to a remote repository (usually github).</li>
+            </ul>
+<!-----------------Section 4--------------------->
+
+        <h2>Things I Should Not Commit</h2>
+            <ul>
+                <li>Sensitive Information : API keys, tokens, passwords & credectials, general personal data</li>
+                <li>Local Environment & OS Metadata: .env, .vscode, .idea, .DS_store, *.log</li>
+                <li>Files Created From the source code.</li>
+            </ul>
+    </body>
+</html>
